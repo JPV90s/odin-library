@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Library</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="images\book-open-page-variant-outline.svg" alt="open book 1">
+        <h1>ODIN LIBRARY</h1>
+        <img src="images\book-open-page-variant.svg" alt="open book 2">
+    </header>
+    <main>
+        <div class="btn-container">
+            <p>Press button to add more books to your library</p>
+            <button id="new-book-btn">Add book to your library</button>
+        </div>
+        <dialog id="dialog">
+            <form id="new-book-form" method="dialog">
+                <h3>Add new book</h3>
+                <label for="title">Book Title:</label>
+                <input type="text" id="title" autofocus required>
+                <label for="author">Author Name:</label>
+                <input type="text" id="author" required>
+                <label for="title">Nro. of Pages:</label>
+                <input type="number" id="pages" required>
+                <label for="read">Did you read it?</label>
+                <select name="read" id="read" required>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+                <div class="form-btns">
+                    <button type="submit">Save</button>
+                    <button id="close" type="button">Close</button>
+                </div>    
+            </form>
+        </dialog>
+        <div id="library"></div>
+    </main>
+</body>
+</html>
